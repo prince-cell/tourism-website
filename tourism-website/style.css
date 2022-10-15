@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+.brand-logo {
+    display: flex;
+    align-items: center;
+    font-size: 2.1rem;
+    text-decoration: none;
+    color: black;
+}
+.brand-logo-name {
+    margin-left: 0.2rem;
+}
+.main-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-nav a {
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+}
+.main-nav a:hover {
+    color: #bf7617;
+}
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+}
+.dropdown-menu-destinations ul li {
+    background: black;
+    display: none;
+    animation: animate 1s ease;
+}
+.dropdown-menu-destinations ul li a {
+    color: #fff;
+}
+.dropdown-menu-destinations ul li a:hover {
+    background: #fff;
+    color: black;
+}
+.main-nav ul li:hover ul li {
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-menu-destinations ul li:nth-child(1) {
+    animation: animate 500ms ease;
+}
+.dropdown-menu-destinations ul li:nth-child(2) {
+    animation: animate 800ms ease;
+}
+.dropdown-menu-destinations ul li:nth-child(3) {
+    animation: animate 1s ease;
+}
+@keyframes animate {
+    0% {
+        transform: scale(2, 2) rotateX(90deg);
+    }
+    100% {
+        transform: scale(1, 1) rotateX(0deg);
+    }
+}
+.dropdown-menu-safari ul li {
+    background: black;
+    display: none;
+    animation: animate 1s ease;
+}
+.dropdown-menu-safari ul li a {
+    color: #fff;
+}
+.dropdown-menu-safari ul li a:hover {
+    background: #fff;
+    color: black;
+}
+.main-nav ul li:hover ul li {
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-menu-safari ul li:nth-child(1) {
+    animation: animate 500ms ease;
+}
+.dropdown-menu-safari ul li:nth-child(2) {
+    animation: animate 800ms ease;
+}
+.dropdown-menu-safari ul li:nth-child(3) {
+    animation: animate 1s ease;
+}
+@keyframes animate {
+    0% {
+        transform: scale(2, 2) rotateX(90deg);
+    }
+    100% {
+        transform: scale(1, 1) rotateX(0deg);
+    }
+}
+
+/* slide show */
+.slide-show-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper {
+    width: 99%;
+    height: 95%;
+}
+.swiper-slide img {
+    width: 100%;
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: #fff;
+}
+.swiper .swiper-pagination-bullet-active{
+    background: #fff;
+}
